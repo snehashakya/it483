@@ -1,0 +1,56 @@
+body{
+   font-family: sans-serif;
+}
+
+.header img {
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+
+.header h2 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+    color:orange
+}
+
+.header h2 {
+  text-shadow: 2px 2px; 
+  font-style: italic;
+}
+
+a{
+    color: orange;
+}
+
+p.a {
+  font: 15px arial, sans-serif;
+
+    
+}
+h1::first-letter{
+   font-size: 200%;
+}
+img{
+   float: left;
+}
+
+.header h2{
+   color: orange;
+   padding-left: 80px;
+   font-style: italic;
+   text-shadow: 2px 1px black;
+}
+
+.header>h3{
+   padding-left: 80px;
+}
+
+li{
+   padding: .4em;
+}
+footer{
+   font-size: 11px;
+   text-align: center;
+}
