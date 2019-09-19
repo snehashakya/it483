@@ -1,56 +1,73 @@
+html{
+background-image: url(bats.gif);
+background-repeat: repeat;
+ 
+}
 body{
-   font-family: sans-serif;
-}
-
-.header img {
-  float: left;
-  width: 100px;
-  height: 100px;
-}
-
-.header h2 {
-  position: relative;
-  top: 18px;
-  left: 10px;
-    color:orange
-}
-
-.header h2 {
-  text-shadow: 2px 2px; 
-  font-style: italic;
-}
-
-a{
-    color: orange;
+font-family: sans-serif;
+margin:0;
+max-width: 800px;
+background-color: white;
+border-style: solid;
+margin-left: auto;
+margin-right:auto;
+box-shadow: 10px 5px 5px 10px;
 }
 
 p.a {
   font: 15px arial, sans-serif;
-
-    
 }
+
+main{
+padding:20px;
+padding-left:30px;
+margin-top:-20px;
+}
+
 h1::first-letter{
    font-size: 200%;
 }
+
 img{
-   float: left;
+float: left;
+display: inline;
+vertical-align: middle;
 }
 
-.header h2{
-   color: orange;
-   padding-left: 80px;
-   font-style: italic;
-   text-shadow: 2px 1px black;
+header{
+vertical-align: middle;
+margin:0;
+padding: 1px;
+border-bottom: 2px solid;
+background: linear-gradient(45deg, white, orange, black);
 }
 
-.header>h3{
-   padding-left: 80px;
+header.h2{
+padding-left: 80px;
+margin-bottom:0;
+margin-left:30px;
+}
+
+header.h3{
+margin-top:0;
+padding-left: 80px;
+margin-left:30px;
+}
+
+a:link,a:visited{
+color: orange;
 }
 
 li{
-   padding: .4em;
+margin:0;
+//padding: .4em;
 }
+
 footer{
-   font-size: 11px;
-   text-align: center;
+margin-top:-10px;
+height: 50px;
+font-size: 16px;
+border-top: 2px solid;
+background: linear-gradient(45deg, black, orange, white);
+text-align: center;
 }
