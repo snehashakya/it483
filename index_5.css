@@ -1,0 +1,92 @@
+html{
+    background-image: url("bats.gif");
+    background-repeat: repeat;
+    width: auto;
+    height: auto;
+ 
+}
+body{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    margin: 5px auto;
+    max-width: 800px;
+    background-color: white;
+    border-style: 3px solid black;
+    box-shadow: 0 9px 18px 9px;
+}
+
+a {
+	font-weight: bold;
+	color: orange;
+}
+a:link, a:visited { 
+    color: orange; 
+}
+a:hover, a:focus { 
+    color: green;
+}
+
+h1::first-letter{
+   font-size: 200%;
+}
+
+
+header img{
+    float: left;
+    padding-right: 15px;
+}
+
+header{
+    vertical-align: middle;
+    margin:0;
+    padding: 15px;
+    border-bottom: 2px solid black;
+    background: linear-gradient(45deg, white, orange, black);
+}
+
+header.h2{
+    font-size: 230%;
+}
+
+header.h3{
+    font-size: 125%;
+}
+aside{
+    float:left;
+    display: inline;
+}
+/* Main */
+main {
+    margin-left: 25%;
+	padding: 0px 25px 25px 25px;
+}
+main h1 { 
+	font-size: 140%;
+	margin-bottom: .5em;
+}
+main h1:first-letter { 
+	font-size: 250%;
+}
+main h2 {
+	font-size: 125%;
+	margin: .8em 0 .5em 0;
+}
+main h3 {
+	font-size: 110%;
+	margin-bottom: .5em;
+}
+main p {
+	margin-bottom: .5em;
+}
+main ul {
+	margin-top: 0;
+
+}
+
+footer{
+    margin-top:-10px;
+    height: 50px;
+    font-size: 90%;
+    border-top: 2px solid;
+    background: linear-gradient(45deg, black, orange, white);
+    text-align: center;
+    }
