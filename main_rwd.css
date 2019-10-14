@@ -224,4 +224,22 @@ footer{
 }
 
 
+a:active {
+    font color: orange;
+}
+    
+ a:hover:not(.active) {
+    font color: orange;
+}
+a:link {
+  color: orange;
+}
 
+h2 {
+    margin: 0px;
+    padding: 0px;   
+}
+
+.tdbg {
+    background-color:#F5DEB3;
+}

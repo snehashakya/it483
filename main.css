@@ -1,73 +1,228 @@
 html{
-background-image: url(bats.gif);
-background-repeat: repeat;
+    background-image: url("bats.gif");
+    background-repeat: repeat;
+    width: auto;
+    height: auto;
  
 }
 body{
-font-family: sans-serif;
-margin:0;
-max-width: 800px;
-background-color: white;
-border-style: solid;
-margin-left: auto;
-margin-right:auto;
-box-shadow: 10px 5px 5px 10px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    margin: 5px auto;
+    max-width: 800px;
+    background-color: white;
+    border-style: 3px solid black;
+    box-shadow: 0 9px 18px 9px;
+    
 }
 
-p.a {
-  font: 15px arial, sans-serif;
+a{
+	color: white;
 }
-
-main{
-padding:20px;
-padding-left:30px;
-margin-top:-20px;
+aside a:link, a:visited { 
+    color: black; 
+}
+a:hover, a:focus { 
+    color: orange;
 }
 
 h1::first-letter{
    font-size: 200%;
 }
 
-img{
-float: left;
-display: inline;
-vertical-align: middle;
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  padding-left: 48px;
+  padding-right: 47px;
+}
+
+a{
+    font-weight: lighter;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0; 
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  color: orange;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.dropdown-content a:hover{
+    color:white;
+}
+
+.dropdown-content a:hover {
+  background-color: slategray;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+header img{
+    float: left;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 15px;
 }
 
 header{
-vertical-align: middle;
-margin:0;
-padding: 1px;
-border-bottom: 2px solid;
-background: linear-gradient(45deg, white, orange, black);
+    vertical-align: middle;
+    margin:0px;
+    padding: 0;
+    border-bottom: 2px solid black;
+    background: linear-gradient(45deg, white, orange, black);
 }
 
-header.h2{
-padding-left: 80px;
-margin-bottom:0;
-margin-left:30px;
+header h2{
+    margin-bottom: -40px;
+    padding-top: 20px;
+    font-size: 30px;
 }
 
-header.h3{
-margin-top:0;
-padding-left: 80px;
-margin-left:30px;
+header h3{
+    padding-left: 100px;
+    padding-top: 20px;
+    font-size: 20px;
 }
 
-a:link,a:visited{
-color: orange;
+menu{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    max-width: 800px;
 }
 
-li{
-margin:0;
-//padding: .4em;
+menu li {
+    display:inline;
+    padding-left: 20px;
+    padding-right: 25px;
+    text-align: center;
+    width: 150px;   
+}
+
+menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+aside{
+    float:left;
+    display: inline;
+    padding: 25px;
+}
+
+aside li{
+    border: 2px solid black;
+    margin-bottom: 5px;
+    background-color: orange;
+    display:block;
+    width:100px;
+    padding: 5px;
+    text-align: center;
+}
+
+aside li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+main a {
+	font-weight: bold;
+	color: orange;
+}
+
+main a:link, main a:visited { 
+    color: orange; 
+}
+
+main {
+    margin-left: 25%;
+    margin-top: %;
+	padding: 70px 25px 25px 25px;
+}
+
+main h1 { 
+	font-size: 140%;
+	margin-bottom: .5em;
+}
+
+main h1:first-letter { 
+	font-size: 250%;
+}
+
+main h2 {
+	font-size: 125%;
+	margin: .8em 0 .5em 0;
+}
+
+main h3 {
+	font-size: 110%;
+	margin-bottom: .5em;
+}
+
+main p {
+	margin-bottom: .5em;
+}
+
+main ul {
+	margin-top: 0;
+
 }
 
 footer{
-margin-top:-10px;
-height: 50px;
-font-size: 16px;
-border-top: 2px solid;
-background: linear-gradient(45deg, black, orange, white);
-text-align: center;
+    margin-top:-10px;
+    height: 50px;
+    font-size: 90%;
+    border-top: 2px solid;
+    background: linear-gradient(45deg, black, orange, white);
+    text-align: center;
+    text-decoration: none
 }
+
+
+
