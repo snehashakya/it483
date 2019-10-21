@@ -1,58 +1,35 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        
-    <title>MNSU-IT483</title>
-        <style>
-            body{background-image: url(Charity.jpg);
-                background-position: center;
-                background-repeat: no-repeat;} 
-        </style>
-    </head>
-        <header>
+<head>
+	<meta charset="utf-8">
+	<title>Sales Tax Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="sales_tax.js"></script>
+</head>
+<body>
+<main>
+  
+    <h1>Sales Tax Calculator</h1>
+    <p>Enter Subtotal and Tax Rate and click "Calculate".</p> 
 
-            <h1><u>Web Application and User interface Design</u></h1>
-            <h2><em>Sneha Shakya</em></h2>
-        </header>
-   
-    <nav class="crumbs">
-        <ol>
-            <li  class="crumb"><a href="https://www.globalgiving.org"> Global Giving </a></li>
-            <li class="crumb"><a href="https://www.linkedin.com"> LinkedIn </a></li>
-            <li class="crumb"><a href="https://greatnonprofits.org"> Non Profit Organization </a></li>
-        </ol>
-    </nav>
-    
-    <table>
-        <tr>
-            <th>Month</th>
-            <th>Donation</th>
-        </tr>
-        
-        <tr>
-            <td>January</td>
-            <td>$1800</td>
-        </tr>
-        
-        <tr>
-            <td>February</td>
-            <td>$3400</td>
-        </tr>
-        
-        <tr>
-            <td>March</td>
-            <td>$1670</td>
-        </tr>
-        
-        <tr>
-            <td>April</td>
-            <td>$1200</td>
-        </tr>
-        
-    </table>
-        
-        <p>
-            Next Page
-        <a href="HtmlPage1.html">
-            HtmlPage1</a>
-        </p>
+    <label for="subtotal">Subtotal:</label>
+    <input type="text" id="subtotal" onclick="clearSubTotal()" >
+    <span id="SubTotal"></span><br>
+
+    <label for="tax_rate">Tax Rate:</label>
+    <input type="text" id="tax_rate"
+    onclick="clearTaxRate()" >
+    <span id="TaxRate"></span><br>
+
+    <label for="sales_tax">Sales Tax:</label>
+    <input type="text" id="sales_tax" disabled ><br>
+
+    <label for="total">Total:</label>
+    <input type="text" id="total" disabled ><br>
+
+    <label>&nbsp;</label>
+    <input type="button" id="calculate" value="Calculate" >
+    <input type="button" id="clear" value="Clear" onclick="clear_click()"><br>
+</main>
+</body>
+</html>
